@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Proyecto Front-End en React.js para Numen Academy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requerimientos de Diseño
+1. Se realizará el diseño tomando de referencia el siguiente diseño en Figma:
+https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-(Community)?node-id=0-1
 
-## Available Scripts
+### Se deberán respetar los siguientes requerimientos
+- Layout
+- Dimensiones
+- Posicionamiento de elementos en la página
+    - Menú superior
+    - Carrito de compras a la derecha
+    - Logo a la izquierda
+    - Imagen de bienvenida de fondo
+    - etc.
+- Queda a criterio de los desarrolladores el contenido de la Homepage
+    - Imagenes a utilizar
+    - Estilo de iconos
+    - Nombre de la empresa u organización
+    - Logo
+    - Texto
+    - Paleta de colores
 
-In the project directory, you can run:
+## Requerimientos técnicos
+- La aplicación deberá estar dividida en componentes funcionales
+- Los estilos deben estar hechos con el approach de *Mobile First*
+- El diseño debe ser *responsive*
+- La información será consumida de un backend mockeado con *[json-server](https://www.npmjs.com/package/json-server)*
+- Para las consultas al backend, se deberá utilizar la librería [*axios*](https://axios-http.com/)
+- Para facilitar los estilos, se pueden utilizar librerías FrontEnd de CSS
 
-### `npm start`
+## Requerimientos funcionales
+- Al presionar el botón de compra, se deberá abrir un *Modal* para confirmar la compra
+- Al confirmar la compra, el número items en el carrito deberá aumentar en uno.
+- La galería de imágenes de *Instagram* deberá desplegar al menos diez imagenes en un carrusel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Temática seleccionada
+- Ecommerce de indumentaria y calzado
 
-### `npm test`
+## Librerías Front-End
+- [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap icons](https://icons.getbootstrap.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estructura de archivos
+- src
+    - assets
+        - css
+        - imagenes
+    - componentes
+        - nombre-componente
+            - Componente.js
+            - componente.css
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Idioma
+- Tanto el código como los textos serán en **Español**
