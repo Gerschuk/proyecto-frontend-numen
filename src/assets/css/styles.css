@@ -1,11 +1,10 @@
-:root {
-  --body-font: 'Roboto', sans-serif;
-  --titles-font: 'Poiret One', sans-serif;
-}
+@import url(./config.css);
 
 body {
   margin: 0;
   font-family: var(--body-font);
+  background-color: var(--color-fondo-body);
+  color: var(--color-texto-principal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

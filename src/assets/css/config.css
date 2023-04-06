@@ -1,0 +1,9 @@
+:root {
+    --fuente-body: 'Roboto', sans-serif;
+    --fuente-titulos: 'Poiret One', sans-serif;
+    --color-primario: rgb(161, 250, 153);
+    --color-secundario: rgb(59, 179, 48);
+    --color-texto-principal: rgb(255, 255, 255);
+    --texto-boton-primario: rgb(0, 0, 0);
+    --color-fondo-body: rgb(34, 34, 34);
+}
