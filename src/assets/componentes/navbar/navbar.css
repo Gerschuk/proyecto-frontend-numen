@@ -1,0 +1,7 @@
+.nav-link {
+    color: var(--color-texto-principal) !important;
+}
+
+.nav-link:hover {
+    text-shadow: 1px 1px 1px var(--color-primario);
+}
