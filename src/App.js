@@ -1,4 +1,4 @@
-import Alerta from "./assets/componentes/Alerta";
+import Alerta from "./assets/componentes/Alerta/Alerta";
 
 function App() {
   return (
