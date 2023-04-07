@@ -1,0 +1,19 @@
+@import url(./config.css);
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--color-fondo-body);
+  color: var(--color-texto-principal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--titles-font);
+}
+
+.alert-primary {
+  background-color: var(--color-fondo-alerta) !important;
+  color: var(--texto-boton-primario) !important;
+}
