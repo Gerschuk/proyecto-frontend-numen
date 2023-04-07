@@ -16,3 +16,19 @@
 .boton-redondo {
     border-radius: 45%;
 }
+
+.bg-secondary {
+    background-color: var(--color-secundario) !important;
+}
+
+.badge {
+    font-size: .7rem;   
+}
+
+.top-25 {
+    top: 15% !important;
+}
+
+.start-75 {
+    left: 25% !important;
+}

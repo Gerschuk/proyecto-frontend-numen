@@ -30,7 +30,7 @@ function App() {
         <Navbar contenido={paginas} />
         <Boton icono="buscar" circulo="true"/>
         <Boton icono="login" circulo="true" />
-        <Boton icono="carrito" circulo="true" />
+        <Boton icono="carrito" circulo="true" cantArticulos="4"/>
         <Boton texto = "Soy un botón de acción"/>
       </header>
     </>

@@ -15,13 +15,18 @@ function Boton(contenido) {
     console.log(contenido);
     let boton = null;
 
-    if (contenido.circulo) {
-        boton = <button className="btn boton-redondo">{iconos[contenido.icono]}</button>;
+    if (contenido.circulo && contenido.icono === "carrito") {
+        boton = <button type="button" className="btn boton-redondo position-relative btn-lg">
+            {iconos[contenido.icono]}
+            <span class="position-absolute top-15 start-100 translate-middle badge rounded-pill bg-secondary">{contenido.cantArticulos}</span>
+        </button>
+    } else if (contenido.circulo) {
+        boton = <button type="button" className="btn boton-redondo btn-lg">{iconos[contenido.icono]}</button>;
     } else {
-        boton = <button className="btn btn-primary btn-sm">{contenido.texto}</button>;
+        boton = <button type="button" className="btn btn-primary btn-sm">{contenido.texto}</button>;
     }
-    
+
     return boton;
-    
+
 }
 export default Boton;
