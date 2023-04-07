@@ -28,9 +28,10 @@ function App() {
       <Alerta texto="Envío Gratis en todas tus compras superiores a 5000$" />
       <header>
         <Navbar contenido={paginas} />
-        <Boton tipo="buscar" />
-        <Boton tipo="login" />
-        <Boton tipo="carrito" />
+        <Boton icono="buscar" circulo="true"/>
+        <Boton icono="login" circulo="true" />
+        <Boton icono="carrito" circulo="true" />
+        <Boton texto = "Soy un botón de acción"/>
       </header>
     </>
   );
