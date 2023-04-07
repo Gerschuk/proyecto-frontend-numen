@@ -16,12 +16,12 @@ function Boton(contenido) {
     let boton = null;
 
     if (contenido.circulo && contenido.icono === "carrito") {
-        boton = <button type="button" className="btn boton-redondo position-relative btn-lg">
+        boton = <button type="button" className="btn boton-redondo position-relative">
             {iconos[contenido.icono]}
-            <span class="position-absolute top-15 start-100 translate-middle badge rounded-pill bg-secondary">{contenido.cantArticulos}</span>
+            <span class="position-absolute top-10 start-85 translate-middle badge rounded-pill bg-secondary">{contenido.cantArticulos}</span>
         </button>
     } else if (contenido.circulo) {
-        boton = <button type="button" className="btn boton-redondo btn-lg">{iconos[contenido.icono]}</button>;
+        boton = <button type="button" className="btn boton-redondo me-1">{iconos[contenido.icono]}</button>;
     } else {
         boton = <button type="button" className="btn btn-primary btn-sm">{contenido.texto}</button>;
     }
