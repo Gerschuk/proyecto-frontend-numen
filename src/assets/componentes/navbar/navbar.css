@@ -17,6 +17,10 @@
     background-color: var(--color-primario);
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 1px var(--color-secundario);
+}
+
 .nav-link:hover {
     text-shadow: 1px 1px 1px var(--color-primario);
 }
