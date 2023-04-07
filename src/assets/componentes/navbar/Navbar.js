@@ -1,8 +1,6 @@
 import "./navbar.css";
 
 function Navbar({ contenido }) {
-    console.log(contenido)
-
     const listaEnlaces = contenido.map(enlace => {
         return (
             <li className="nav-item" key={enlace.id}>
