@@ -1,35 +1,14 @@
-import Alerta from "./assets/componentes/alerta/Alerta";
-import Boton from "./assets/componentes/boton/Boton";
-import Navbar from "./assets/componentes/navbar/Navbar";
-
-
-const paginas = [
-  {
-    id: 0,
-    nombre: "Inicio",
-    url: "/inicio"
-  },
-  {
-    id: 1,
-    nombre: "Productos",
-    url: "/productos"
-  },
-  {
-    id: 2,
-    nombre: "Contacto",
-    url: "/contacto"
-  }
-];
-
 
 function App() {
   return (
-    <>
-      <Alerta texto="Envío Gratis en todas tus compras superiores a 5000$" />
-      <header>
-        <Navbar contenido={paginas} />
-      </header>
-    </>
+    <div>
+      <h1 className='fs-1 text-center my-5 pt-5'>Sitio en construcción</h1>
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
   );
 }
 
