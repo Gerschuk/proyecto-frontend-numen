@@ -1,4 +1,5 @@
 import Alerta from "./assets/componentes/alerta/Alerta";
+import Home from "./assets/componentes/home/Home";
 import Navbar from "./assets/componentes/navbar/Navbar";
 
 
@@ -28,6 +29,9 @@ function App() {
       <header>
         <Navbar contenido={paginas} />
       </header>
+      <main className="container-xl">
+        <Home titulo="Temporada Otoño 2023"/>
+      </main>
     </>
   );
 }
