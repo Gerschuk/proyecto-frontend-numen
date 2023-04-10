@@ -24,6 +24,7 @@
 .navbar-toggler-icon {
     font-size: .8rem;
 }
+
 .nav-link:hover {
     text-shadow: 1px 1px 1px var(--color-primario);
 }

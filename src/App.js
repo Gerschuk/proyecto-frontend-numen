@@ -1,5 +1,4 @@
 import Alerta from "./assets/componentes/alerta/Alerta";
-import Boton from "./assets/componentes/boton/Boton";
 import Navbar from "./assets/componentes/navbar/Navbar";
 
 
