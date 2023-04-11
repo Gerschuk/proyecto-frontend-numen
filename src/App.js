@@ -30,7 +30,7 @@ function App() {
         <Navbar contenido={paginas} />
       </header>
       <main className="container-xl">
-        <Home titulo="Temporada Otoño 2023"/>
+        <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada"/>
       </main>
     </>
   );

@@ -9,7 +9,11 @@
 }
 
 .btn:hover {
-    background-color: var(--color-secundario);
+    background-color: var(--color-secundario) !important;
+}
+
+.btn:focus {
+    background-color: var(--color-secundario) !important;
 }
 
 .boton-redondo {
