@@ -1,4 +1,5 @@
 import Alerta from "./assets/componentes/alerta/Alerta";
+import Beneficios from "./assets/componentes/beneficios/Beneficios";
 import Home from "./assets/componentes/home/Home";
 import Navbar from "./assets/componentes/navbar/Navbar";
 
@@ -29,8 +30,9 @@ function App() {
       <header>
         <Navbar contenido={paginas} />
       </header>
-      <main className="container-xl">
-        <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada"/>
+      <main className="container">
+        <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada" />
+        <Beneficios/>
       </main>
     </>
   );
