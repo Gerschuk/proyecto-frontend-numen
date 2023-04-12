@@ -3,3 +3,7 @@
 .icono {
     font-size: 4rem;
 }
+
+.card-body {
+    font-family: var(--fuente-body);
+}
