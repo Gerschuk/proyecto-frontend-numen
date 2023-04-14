@@ -3,16 +3,16 @@ import Beneficio from "../beneficio/Beneficio";
 
 
 const iconos = {
-    devolucion: <i class="bi bi-arrow-counterclockwise"></i>,
-    calidad: <i class="bi bi-person-fill-exclamation"></i>,
-    envio: <i class="bi bi-calendar2-date"></i>,
-    atc: <i class="bi bi-chat-left-heart"></i>,
-    pagos: <i class="bi bi-credit-card-2-front"></i>
+    devolucion: <i className="bi bi-arrow-counterclockwise"></i>,
+    calidad: <i className="bi bi-person-fill-exclamation"></i>,
+    envio: <i className="bi bi-calendar2-date"></i>,
+    atc: <i className="bi bi-chat-left-heart"></i>,
+    pagos: <i className="bi bi-credit-card-2-front"></i>
 }
 function Beneficios() {
     return (
-        <section className="py-4">
-            <h2 className="titulo text-center">Porque elegir <span className="color-primario">nuestra tienda premium</span></h2>
+        <section className="py-5 mt-4 text-center">
+            <h2 className="titulo">Porque elegir <span className="color-primario">nuestra tienda premium</span></h2>
             <div className="pt-4 row justify-content-evenly">
                 <Beneficio icono={iconos.devolucion} titulo="Devolución grátis" texto="Si el producto llegó dañado, con faltantes o simplemente no te gustó. No te cobramos el costo de devolución" />
                 <Beneficio icono={iconos.calidad} titulo="Control de calidad" texto="Todos nuestros productos son sometidos a estrictos controles de calidad por parte de nuestros especialistas." />

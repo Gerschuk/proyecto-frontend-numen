@@ -1,6 +1,7 @@
 import Alerta from "./assets/componentes/alerta/Alerta";
 import Beneficios from "./assets/componentes/beneficios/Beneficios";
 import Home from "./assets/componentes/home/Home";
+import Mision from "./assets/componentes/mision/Mision";
 import Navbar from "./assets/componentes/navbar/Navbar";
 
 
@@ -32,7 +33,8 @@ function App() {
       </header>
       <main className="container">
         <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada" />
-        <Beneficios/>
+        <Beneficios />
+        <Mision/>
       </main>
     </>
   );
