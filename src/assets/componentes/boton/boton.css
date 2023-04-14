@@ -5,6 +5,7 @@
     background-color: var(--color-primario);
     color: var(--texto-boton-primario);
     font-weight: 400;
+    font-size: 1rem;
     border: none;
 }
 
