@@ -15,7 +15,7 @@ const imgArray = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 function Carrusel() {
     return (
         <section className="row py-4">
-            <h2 className="text-center pt-4"><span class="color-primario">@FashionPremium </span>en Instagram</h2>
+            <h2 className="text-center pt-4"><span className="color-primario">@FashionPremium </span>en Instagram</h2>
 
             <div id="carouselExample" className="carousel slide pt-3">
                 <div className="carousel-inner">
