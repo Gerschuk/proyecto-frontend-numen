@@ -36,15 +36,3 @@ h4 {
   background-color: var(--color-fondo-alerta) !important;
   color: var(--texto-boton-primario) !important;
 }
-
-.UltOfe{ 
-  font-weight: bold;
-  font-size: 2.6rem !important;
-    font-weight: bold;
-    font-family: var(--fuente-titulos);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  
-}
