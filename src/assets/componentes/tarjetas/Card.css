@@ -3,8 +3,8 @@
 .card {
     border: 1px solid #ccc;
     border-radius: 15px;
-    padding: 16px;
-    width: 350px;
+    padding: 5px;
+    width: 300px;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
