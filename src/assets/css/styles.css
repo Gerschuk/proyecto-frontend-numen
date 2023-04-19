@@ -11,9 +11,21 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--titles-font);
+  
 }
 
 .alert-primary {
   background-color: var(--color-fondo-alerta) !important;
   color: var(--texto-boton-primario) !important;
+}
+
+.UltOfe{ 
+  font-weight: bold;
+   font-size: 50px; /* Ajusta el tamaño de fuente del precio según tus necesidades */
+    font-weight: bold;
+  font-family: 'Poiret One';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
