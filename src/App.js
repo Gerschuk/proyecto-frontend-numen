@@ -1,5 +1,10 @@
 import Alerta from "./assets/componentes/alerta/Alerta";
 import Navbar from "./assets/componentes/navbar/Navbar";
+import Home from "./assets/componentes/home/Home";
+import Beneficios from "./assets/componentes/beneficios/Beneficios";
+import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
+import Partner from "./assets/componentes/partner/Partner";
+import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import React from 'react';
 
 const paginas = [
