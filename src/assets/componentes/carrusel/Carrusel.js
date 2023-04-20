@@ -14,26 +14,26 @@ const imgArray = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 function Carrusel() {
     return (
-        <section className="row py-4">
+        <section className="row py-4 justify-content-center">
             <h2 className="text-center pt-4"><span class="color-primario">@FashionPremium </span>en Instagram</h2>
 
-            <div id="carouselExample" className="carousel slide pt-3">
+            <div id="carousel" className="carousel slide pt-3">
                 <div className="carousel-inner">
                     {
                         imgArray.map((elemento, index) => {
                             return (
                                 <div key={index} className={(index === 0) ? "carousel-item active" : "carousel-item"}>
-                                    <img src={elemento} className="d-block w-100" alt="..." />
+                                    <img src={elemento} className="d-block img-fluid" alt="..." />
                                 </div>
                             )
                         })
                     }
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button className="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>

@@ -1,5 +1,17 @@
 @import "../../css/config.css";
 
+
 .color-primario{
     color: var(--color-primario);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background: rgba(0, 0, 0, .3);
+    color: white;
+}
+
+@media only screen and (min-width: 821px) {
+    .carousel {
+            width: 70%;
+        }
 }
