@@ -4,7 +4,7 @@ import "./partner.css";
 
 function Partner(content) {
     return (
-        <section className="partner text-center my-4">
+        <section className="partner text-center my-5">
             <div className="tonalidad d-flex flex-column justify-content-evenly align-items-center">
                 <h2>{content.titulo}</h2>
                 <img className="pt-5" src={content.img} alt="Caritas logo" />
