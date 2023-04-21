@@ -24,7 +24,7 @@ function Navbar({ contenido }) {
                     <button className="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <Boton icono="carrito" circulo="true" cantArticulos="4" />
+                    <Boton icono="carrito" circulo="true" cantArticulos="4"/>
                     <Boton icono="buscar" circulo="true" />
                     <Boton icono="login" circulo="true" />
                 </div>

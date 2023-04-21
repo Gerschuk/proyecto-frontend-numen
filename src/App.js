@@ -6,6 +6,7 @@ import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import React from 'react';
+import Carrito from "./assets/componentes/carrito/Carrito";
 
 const paginas = [
   {
@@ -54,6 +55,7 @@ function App() {
       <Alerta texto="Envío Gratis en todas tus compras superiores a 5000$" />
       <header>
         <Navbar contenido={paginas} />
+        <Carrito/>
       </header>
 
   <main className="container">

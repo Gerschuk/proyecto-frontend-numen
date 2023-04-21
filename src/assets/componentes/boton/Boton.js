@@ -15,7 +15,7 @@ function Boton(contenido) {
     let boton = null;
 
     if (contenido.circulo && contenido.icono === "carrito") {
-        boton = <button type="button" className="btn boton-redondo position-relative">
+        boton = <button type="button" className="btn boton-redondo position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >
             {iconos[contenido.icono]}
             <span className="position-absolute top-10 start-85 translate-middle badge rounded-pill bg-secondary">{contenido.cantArticulos}</span>
         </button>
