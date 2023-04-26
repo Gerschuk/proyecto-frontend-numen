@@ -1,86 +1,43 @@
+@import "../../css/config.css";
 
 
-.card {
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 5px;
-    width: 300px;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(34, 34, 34);;
-   margin-right: 0.5%;
- 
-  }
-  
-  .card-image {
-    width: 75%;
-    max-height: 200px;
-    justify-content: space-around;
-    display: flex;
-    object-fit: cover;
-   align-items: center;
-   
 
-  }
-  
-  .card-title {
-    margin-top: 0;
-    color: whitesmoke;
-    font-family: 'Poiret One';
-  }
-  
-  .card-description {
-    color: white;
-    font-family: 'Poiret One';
-  
-  }
-  .contenedor-botones{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-   margin-bottom: auto;
-   ;
-    
-  }
 
-  .boton-compra {
-    font-family: 'Poiret One';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold; 
-    padding: 10px 20px; /* Ajusta el relleno del botón según tus necesidades */
-    background-color: rgb(161, 250, 153); /* Cambia el color de fondo del botón a tu preferencia */
-    color: #000000; /* Cambia el color del texto del botón a tu preferencia */
-    font-size: 20px; /* Ajusta el tamaño de fuente del botón según tus necesidades */
-    border-radius: 50%; /* Remueve el borde del botón */
-    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
-    /* Otros estilos de diseño como bordes, sombras, etc. según tus necesidades */
-
-  }
+.color-primario{
+    color: var(--color-primario);
+}
+.card-body {
+  font-family: var(--fuente-body);
+}
 
   .precio {
     color: #fff;
-    font-size: 24px; /* Ajusta el tamaño de fuente del precio según tus necesidades */
-    font-weight: bold; /* Opcional: aplica negrita al precio para resaltarlo */
-    /* Otros estilos de fuente, color, margen, etc. según tus necesidades */
+    font-size: 24px; 
+    font-weight: bold; 
+   
   }
   .precio-original {
+    font-size: 20px;
+    
     font-family: 'Poiret One';
-    text-decoration: line-through; /* Aplica una línea horizontal en el texto para indicar el precio original */
-    color: #888; /* Cambia el color del texto del precio original a tu preferencia */
-    /* Otros estilos de fuente, color, margen, etc. según tus necesidades */
+    text-decoration: line-through; 
+    color: #000000;  
   }
   
-  /* Estilo para el precio con descuento */
+ 
   .precio-descuento {
+
     margin-right: 10px;
     font-family: 'Poiret One';
-    color: rgb(161, 250, 153);
-    font-size: 24px; /* Ajusta el tamaño de fuente del precio con descuento según tus necesidades */
-    font-weight: bold; /* Opcional: aplica negrita al precio con descuento para resaltarlo */
-    /* Otros estilos de fuente, color, margen, etc. según tus necesidades */
+    color: rgb(0, 0, 0);
+    font-size: 24px; 
+    font-weight: bold; 
   }
+  
+
+  .card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273)!important;
+    transition: all 0.4s linear;
+  }
+
   
