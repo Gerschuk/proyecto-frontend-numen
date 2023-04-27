@@ -1,10 +1,5 @@
 @import url(../../css/config.css);
 
-
-.nav-link {
-    color: var(--color-texto-principal) !important;
-}
-
 .navbar {
     box-shadow: 0px 5px 10px -5px var(--color-primario);
     height: var(--navbar-height);
@@ -26,6 +21,10 @@
     font-size: .8rem;
 }
 
+.nav-link {
+    color: var(--color-texto-principal) !important;
+}
+
 .nav-link:hover {
     text-shadow: 1px 1px 1px var(--color-primario);
 }
@@ -38,7 +37,7 @@
 
 @media only screen and (min-width: 768px) {
     .navbar .container-fluid>.d-flex {
-        width: 90%;
+        width: 80%;
         padding-right: 2rem;
     }
 

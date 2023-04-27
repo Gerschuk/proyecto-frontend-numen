@@ -1,6 +1,6 @@
 import "./bloque-lateral.css";
 import CheckInformacion from "../check-informacion/CheckInformacion";
-import Boton from "../boton/Boton";
+import Accion from "../accion/Accion"
 
 /* El componente bloque lateral,  muestra texto al lado de una imagen:
 
@@ -41,7 +41,7 @@ function BloqueLateral({ props }) {
                         </> : ""
                 }
                 <div className="text-center">
-                    <Boton texto={props.textoBoton} />
+                    <Accion texto={props.textoBoton} />
                 </div>
             </div>
             <div className="col-md-4 pt-4">

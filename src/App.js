@@ -11,17 +11,17 @@ import Carrito from "./assets/componentes/carrito/Carrito";
 const paginas = [
   {
     id: 0,
-    nombre: "Inicio",
+    texto: "Inicio",
     url: "/inicio"
   },
   {
     id: 1,
-    nombre: "Productos",
+    texto: "Productos",
     url: "/productos"
   },
   {
     id: 2,
-    nombre: "Contacto",
+    texto: "Contacto",
     url: "/contacto"
   }
 ];
