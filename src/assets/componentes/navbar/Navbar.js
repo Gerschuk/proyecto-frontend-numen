@@ -21,7 +21,7 @@ function Navbar({ contenido }) {
                     <button className="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                   <Accion tipo="boton" circulo={true} icono="carrito"  cantProductos="4" />
+                   <Accion tipo="boton" circulo={true} icono="carrito"  cantProductos="0" />
                    <Accion tipo="boton" circulo={true} icono="buscar" />
                    <Accion tipo="boton" circulo={true} icono="login" />
                     
@@ -33,7 +33,6 @@ function Navbar({ contenido }) {
                 </div>
            </div>
        </nav>
-       
     ) 
 
 }

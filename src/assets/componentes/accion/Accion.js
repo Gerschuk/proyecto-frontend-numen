@@ -7,6 +7,7 @@ import { tipoAccion } from "../../Diccionario";
 // icono: String, debe ser uno de los iconos existentes en el objeto iconos
 // texto: String
 // url: String, indica la url para los links, los botones solo se utilizan para realizar acciones.
+//cantProducto: String, Solo disponible para el icono del carrito
 
 
 //Tipos de iconos
