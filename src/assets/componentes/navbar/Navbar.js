@@ -18,8 +18,7 @@ function Navbar({ contenido }) {
                     <img className="img-fluid" src={logo} alt="Fashion Trends logo"></img>
                 </a>
 
-                
-                <div className="d-flex flex-row-reverse order-md-2">
+               <div className="d-flex flex-row-reverse  order-xl-2">
                     <button className="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
