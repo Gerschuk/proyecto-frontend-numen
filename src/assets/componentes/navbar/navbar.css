@@ -1,9 +1,6 @@
 @import url(../../css/config.css);
 
 
-.nav-link {
-    color: var(--color-texto-principal) !important;
-}
 
 .navbar {
     box-shadow: 0px 5px 10px -5px var(--color-primario);
@@ -23,6 +20,10 @@
 
 .navbar-toggler-icon {
     font-size: .8rem;
+}
+
+.nav-link {
+    color: var(--color-texto-principal) !important;
 }
 
 .nav-link:hover {
