@@ -35,8 +35,8 @@ function BloqueLateral({ props }) {
                 {
                     (props.checks !== null) ?
                         <>
-                            {props.checks.map((elem) => {
-                                return <CheckInformacion texto={elem} />
+                            {props.checks.map((elem, index) => {
+                                return <CheckInformacion key={index} texto={elem} />
                             })}
                         </> : ""
                 }

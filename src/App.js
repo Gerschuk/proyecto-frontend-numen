@@ -55,21 +55,21 @@ function App() {
       <Alerta texto="Envío Gratis en todas tus compras superiores a 5000$" />
       <header>
         <Navbar contenido={paginas} />
-        <Carrito/>
+        <Carrito />
       </header>
 
-  <main className="container">
+      <main className="container">
 
-    <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada" />
+        <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada" />
 
-    <Beneficios />
-    <BloqueLateral props={bloqueLateral1} />
+        <Beneficios />
+        <BloqueLateral props={bloqueLateral1} />
 
-    <Partner titulo="Nuestro socio benéfico" img="https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg" texto="Donamos el 5% de nuestras ganancias a nuestro socio benéfico" />
+        <Partner titulo="Nuestro socio benéfico" img="https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg" texto="Donamos el 5% de nuestras ganancias a nuestro socio benéfico" />
 
-    <BloqueLateral props={bloqueLateral2} />
-    <Carrusel />
-  </main>
+        <BloqueLateral props={bloqueLateral2} />
+        <Carrusel />
+      </main>
     </>
   );
 }
