@@ -19,6 +19,9 @@ const iconos = {
     "twitter": <i className="bi bi-twitter"></i>,
     "whatsapp": <i className="bi bi-whatsapp"></i>,
     "telegram": <i className="bi bi-telegram"></i>,
+    "-": <i className="bi bi-dash-circle-fill"></i>,
+    "+": <i className="bi bi-plus-circle-fill"></i>,
+    "borrar": <i className="bi bi-trash3-fill"></i>
 }
 
 
@@ -58,7 +61,11 @@ function Accion({ tipo = "link", circulo = false, icono = null, texto = null, ur
                 break;
             }
             default: {
-                render = <button type="button" className="btn btn-primary btn-sm">{texto}</button>;
+                if (!texto) {
+                    render = <button type="button" className="solo-icono">{iconos[icono]}</button>;
+                } else {
+                    render = <button type="button" className="btn btn-primary btn-sm">{texto}</button>;
+                }
             }
         }
     }

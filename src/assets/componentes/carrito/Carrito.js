@@ -1,9 +1,10 @@
+import ListaProductos from "./ListaProductos";
 import "./carrito.css";
 
 function Carrito() {
     return (
         <div className="offcanvas offcanvas-start"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvas" aria-labelledby="offcanvasLabel"
             data-bs-scroll="true">
             <div className="offcanvas-header">
@@ -12,7 +13,7 @@ function Carrito() {
             </div>
             <div className="offcanvas-body">
                 <div>
-                    Acá van los items del carrito
+                    <ListaProductos/>
                 </div>
 
             </div>
