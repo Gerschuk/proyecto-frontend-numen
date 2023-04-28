@@ -17,10 +17,6 @@
     background-color: var(--color-secundario) !important;
 }
 
-.btn:focus {
-    background-color: var(--color-secundario) !important;
-}
-
 .boton-redondo {
     border-radius: 50%;
 }
