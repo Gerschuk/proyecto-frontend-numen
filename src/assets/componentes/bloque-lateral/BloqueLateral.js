@@ -41,7 +41,7 @@ function BloqueLateral({ props }) {
                         </> : ""
                 }
                 <div className="text-center">
-                    <Accion texto={props.textoBoton} />
+                    <Accion tipo="boton" texto={props.textoBoton} />
                 </div>
             </div>
             <div className="col-md-4 pt-4">
