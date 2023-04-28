@@ -1,25 +1,31 @@
 import "./bloque-lateral.css";
 import CheckInformacion from "../check-informacion/CheckInformacion";
-import Boton from "../boton/Boton";
+import Accion from "../accion/Accion"
 
-/* El componente bloque laterla, muestra texto al lado de una imagen:
+/* El componente bloque lateral,  muestra texto al lado de una imagen:
 
-  Por defecto el texto se encuentra del lado izquierdo de la imagen, en caso de cambiar el orden y que la imagen se encuentre del lado izquierdo del texto, pasarle la prop direccion = "izquierda"
+  Props que requiere:
+    Por defecto el texto se encuentra del lado izquierdo de la imagen, en caso de cambiar el orden y que la imagen se encuentre del lado izquierdo del texto, pasarle la prop direccion = "izquierda"
+    
+    titulo="Titulo a mostrar"
 
-  Por defecto el contenido se muestra como un párrafo (checks = null) si recibe en la prop checks cada posición del array será mostrado con un tilde
+    texto="Contenido a mostrar"
 
-  Por defecto el texto del botón será Comprar Ahora, para personalizarlo enviar la prop textoBoton="texto deseado para el botón"
+    checks = null -> No muestra parrafos con tilde
+    checks = [] -> Muestra cada posición del array en un parrafo con tilde
+
+    textoBoton = "Texto del botón"
+
+    imagen = url
+
+  
 */
 
 function BloqueLateral({ props }) {
-    console.log(props.titulo)
     const arrTitulo = props.titulo.split(" ");
     const strNonColor = arrTitulo.slice(0, arrTitulo.length / 2).join(" ") + " ";
     /* Obtiene del titulo las palabras a mostrar de color */
     const strColor = arrTitulo.slice(arrTitulo.length / 2, arrTitulo.length).join(" ");
-    console.log(strColor)
-    console.log(arrTitulo)
-    console.log(props.imagen)
 
     return (
         <section className={(props.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
@@ -29,11 +35,13 @@ function BloqueLateral({ props }) {
                 {
                     (props.checks !== null) ?
                         <>
-                            <CheckInformacion texto="Conectamos con los productores locales" /><CheckInformacion texto="Porque tiene más sentido comprar algo hecho por una persona cercana que por una empresa lejana." /><CheckInformacion texto="Porque los productos locales hacen de nuestro rincón del mundo un lugar mejor para vivir" /><CheckInformacion texto="Porque fomentamos el empleo local" /><CheckInformacion texto="Porque tiene más sentido para el medio ambiente" />
+                            {props.checks.map((elem) => {
+                                return <CheckInformacion texto={elem} />
+                            })}
                         </> : ""
                 }
                 <div className="text-center">
-                    <Boton texto={props.textoBoton} />
+                    <Accion texto={props.textoBoton} />
                 </div>
             </div>
             <div className="col-md-4 pt-4">
