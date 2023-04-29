@@ -7,6 +7,7 @@ import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import React from 'react';
 import Carrito from "./assets/componentes/carrito/Carrito";
+import Footer from "./assets/componentes/footer/Footer";
 
 const paginas = [
   {
@@ -70,6 +71,7 @@ function App() {
         <BloqueLateral props={bloqueLateral2} />
         <Carrusel />
       </main>
+      <Footer />
     </>
   );
 }
