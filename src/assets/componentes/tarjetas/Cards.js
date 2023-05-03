@@ -36,20 +36,20 @@ const cards = [
 
 function Cards() {
   return (
-    <section className="py-5 mt-5 text-center">
+    <section className=" row py-5 mt-5 text-center ">
       <h2 className="titulo">Ultimas <span className="color-primario">Ofertas</span></h2>
-    <div className='container1 d-flex flex-wrap justify-content-center h-100 aling-item-center '>  
-       <div className='row col-20'>  
+    <div className='d-flex flex-wrap justify-content-center h-100 aling-item-center '>  
+       
      {
       cards.map(card =>(
-        <div className=' col-md-3 key={card.id}'>
+        <div className=' my-1 col-md-3 key={card.id}'>
           <Card title={card.title} imgSource={card.image} precioD={card.precioD}precioO={card.precioO}  />
           </div>
       ))
      }
         </div>
     
-       </div>
+     
        </section>
   
    
