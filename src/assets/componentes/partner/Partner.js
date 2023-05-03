@@ -9,7 +9,7 @@ function Partner(content) {
                 <h2>{content.titulo}</h2>
                 <img className="pt-5" src={content.img} alt="Caritas logo" />
                 <p className="pt-2">{content.texto}</p>
-                <Accion texto="Conocé más sobre Caritas" />
+                <Accion tipo="boton" texto="Conocé más sobre Caritas" />
             </div>
         </section>
     )

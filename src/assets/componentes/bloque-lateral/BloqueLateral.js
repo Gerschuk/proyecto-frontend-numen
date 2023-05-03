@@ -35,13 +35,13 @@ function BloqueLateral({ props }) {
                 {
                     (props.checks !== null) ?
                         <>
-                            {props.checks.map((elem) => {
-                                return <CheckInformacion texto={elem} />
+                            {props.checks.map((elem, index) => {
+                                return <CheckInformacion key={index} texto={elem} />
                             })}
                         </> : ""
                 }
                 <div className="text-center">
-                    <Accion texto={props.textoBoton} />
+                    <Accion tipo="boton" texto={props.textoBoton} />
                 </div>
             </div>
             <div className="col-md-4 pt-4">

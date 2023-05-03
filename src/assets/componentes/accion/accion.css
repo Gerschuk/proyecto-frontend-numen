@@ -17,26 +17,27 @@
     background-color: var(--color-secundario) !important;
 }
 
-.btn:focus {
-    background-color: var(--color-secundario) !important;
-}
-
 .boton-redondo {
     border-radius: 50%;
 }
 
-.bg-secondary {
-    background-color: var(--color-secundario) !important;
+.solo-icono {
+    color: var(--color-secundario);
+    border: none;
+    background-color: transparent;
 }
-
-.badge {
-    font-size: .7rem;   
-}
-
 .top-10 {
     top: 10% !important;
 }
 
 .start-85 {
     left: 85% !important;
+}
+
+.badge {
+    font-size: .7rem;
+}
+
+.bg-secondary {
+    background-color: var(--color-secundario) !important;
 }
