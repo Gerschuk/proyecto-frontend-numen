@@ -8,6 +8,7 @@ import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import React from 'react';
 import Carrito from "./assets/componentes/carrito/Carrito";
 import Footer from "./assets/componentes/footer/Footer";
+import axios from "axios";
 
 const paginas = [
   {
@@ -61,7 +62,9 @@ function App() {
 
       <main className="container">
 
-        <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada" />
+        <Home
+          titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada"
+          textoBoton="Conocer más" />
 
         <Beneficios />
         <BloqueLateral props={bloqueLateral1} />
