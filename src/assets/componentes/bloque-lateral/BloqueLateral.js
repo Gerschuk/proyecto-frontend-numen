@@ -24,7 +24,6 @@ import Accion from "../accion/Accion"
 function BloqueLateral(contenido) {
 
     const conten = contenido?.data?.find(item => item.componente === contenido.bloque);
-    console.log("contenido:", conten)
     
     const arrTitulo = conten?.titulo.split(" ");
     const strNonColor = arrTitulo?.slice(0, arrTitulo.length / 2).join(" ") + " ";

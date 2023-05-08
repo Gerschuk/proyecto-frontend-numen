@@ -5,7 +5,7 @@ import "./partner.css";
 function Partner(content) {
 
     const cont = content?.data?.find(item => item.componente === "partner");
-    console.log(cont)
+
     return (
         <section className="partner text-center my-5">
             <div className="tonalidad d-flex flex-column justify-content-evenly align-items-center">
