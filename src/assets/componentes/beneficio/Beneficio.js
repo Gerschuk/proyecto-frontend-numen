@@ -1,7 +1,6 @@
 import "./beneficio.css";
 
 function Beneficio(contenido) {
-    console.log(contenido);
     return (
         <div className="card col-xl-2 my-1">
             <div className="card-body d-flex align-items-center flex-column">
