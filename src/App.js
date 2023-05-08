@@ -60,10 +60,9 @@ function App() {
        
         <BloqueLateral data={contenido} bloque="bloque1"/>
 
-        {/*
-        <Partner titulo="Nuestro socio benéfico" img="https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg" texto="Donamos el 5% de nuestras ganancias a nuestro socio benéfico" />
-
-        */}
+        
+        <Partner data={contenido} />
+        
         <BloqueLateral data={contenido} bloque="bloque2" />
         <Carrusel />
         

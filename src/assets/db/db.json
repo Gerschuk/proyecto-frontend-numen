@@ -80,7 +80,8 @@
             "componente": "partner",
             "titulo": "Nuestro socio benéfico",
             "img": "https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg",
-            "texto": "Donamos el 5% de nuestras ganancias a nuestro socio benéfico"
+            "texto": "Donamos el 5% de nuestras ganancias a nuestro socio benéfico",
+            "textoBoton": "Conocé más sobre Caritas"
         },
         {
             "id": 5,
