@@ -1,46 +1,76 @@
+// Componentes
 import Alerta from "./assets/componentes/alerta/Alerta";
 import Beneficios from "./assets/componentes/beneficios/Beneficios";
-import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import Home from "./assets/componentes/home/Home";
 import Mision from "./assets/componentes/mision/Mision";
 import Navbar from "./assets/componentes/navbar/Navbar";
+import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
+import Carrusel from "./assets/componentes/carrusel/Carrusel";
+import Carrito from "./assets/componentes/carrito/Carrito";
+import Footer from "./assets/componentes/footer/Footer";
 
+// Liberarías
+import React, { useEffect, useState } from 'react';
+import axios from "axios";
 
-const paginas = [
-  {
-    id: 0,
-    nombre: "Inicio",
-    url: "/inicio"
-  },
-  {
-    id: 1,
-    nombre: "Productos",
-    url: "/productos"
-  },
-  {
-    id: 2,
-    nombre: "Contacto",
-    url: "/contacto"
-  }
-];
+// Endpoints
+import { ConexionesApi } from "./assets/Diccionario";
 
 function App() {
+
+  // Obtiene el contenido estático de la página
+  const [contenido, setContenido] = useState([]);
+
+  useEffect(() => {
+    axios.get(ConexionesApi.contenido)
+      .then(res => {
+        setContenido(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+  }, []);
+
+  // Obtiene las rutas de la página, por ejemplo los links del navbar
+  const [rutas, setRutas] = useState([]);
+
+  useEffect(() => {
+    axios.get(ConexionesApi.rutas)
+      .then(res => {
+        setRutas(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+  }, [])
+
   return (
     <>
-      <Alerta texto="Envío Gratis en todas tus compras superiores a 5000$" />
+      <Alerta data={contenido} />
       <header>
-        <Navbar contenido={paginas} />
+        <Navbar contenido={rutas} />
+        <Carrito />
       </header>
+      
       <main className="container">
-        <Home titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada" />
-        <Beneficios />
-        <Mision />
-        <Partner titulo="Nuestro socio benéfico" img="https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg" texto="Donamos el 5% de nuestras ganancias a nuestro socio benéfico" />
-        <Carrusel/>
+
+        <Home data={contenido} />
+        
+        <Beneficios data={contenido} />
+       
+        <BloqueLateral data={contenido} bloque="bloque1"/>
+
+        
+        <Partner data={contenido} />
+        
+        <BloqueLateral data={contenido} bloque="bloque2" />
+        <Carrusel />
+        
       </main>
-    </>
-  );
+      <Footer /> 
+      </>
+      );
 }
 
-export default App;
+      export default App;

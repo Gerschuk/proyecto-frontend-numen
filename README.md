@@ -55,3 +55,15 @@ https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-(Community
 
 ## Idioma
 - Tanto el código como los textos serán en **Español**
+
+# Pasos para probar el proyecto
+
+### Descargar el proyecto
+
+### Instalar las dependencias
+Para instalar todas las dependencias del proyecto ejecutar el siguiente comando
+`npm install`
+
+### Simular la API con JSON-Server
+Para poder visualizar el contenido del sitio es necesario levantar el servicio de json-server con el siguiente comando.
+`json-server --watch "src/assets/db/db.json"`
