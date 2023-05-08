@@ -1,0 +1,190 @@
+{
+    "rutas": [
+        {
+            "id": 0,
+            "texto": "Inicio",
+            "url": "/"
+        },
+        {
+            "id": 1,
+            "texto": "Productos",
+            "url": "/productos"
+        },
+        {
+            "id": 2,
+            "texto": "Contacto",
+            "url": "/contacto"
+        }
+    ],
+    "contenido": [
+        {
+            "id": 0,
+            "componente": "alerta",
+            "texto": "Envío Gratis en todas tus compras superiores a 5000$"
+        },
+        {
+            "id": 1,
+            "componente": "home",
+            "titulo": "Temporada Invierno",
+            "texto": "Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada",
+            "textoBoton": "Conocer más"
+        },
+        {
+            "id": 2,
+            "componente": "beneficios",
+            "beneficios": [
+                {
+                    "icono": "devolucion",
+                    "titulo": "Devolución Gratis",
+                    "texto": "Si el producto llegó dañado, con faltantes o simplemente no te gustó. No te cobramos el costo de devolución"
+                },
+                {
+                    "icono": "calidad",
+                    "titulo": "Control de calidad",
+                    "texto": "Todos nuestros productos son sometidos a estrictos controles de calidad por parte de nuestros especialistas."
+                },
+                {
+                    "icono": "envio",
+                    "titulo": "Regalos",
+                    "texto": "Podes realizar tu compra hasta 1 mes antes del envío, permitiendote hacer regalos a tu ser querido y ganarle a la inflación."
+                },
+                {
+                    "icono": "atc",
+                    "titulo": "Atención al cliente",
+                    "texto": "Nuestro equipo de profesionales está a tu disposición las 24hs para resolver todas tus dudas."
+                },
+                {
+                    "icono": "pagos",
+                    "titulo": "Medios de pago",
+                    "texto": "Aceptamos todos los medios de pago, desde efecivo hasta criptomonedas."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "componente": "bloque1",
+            "titulo": "¿Quiénes Fabrican Tus Prendas?",
+            "texto": "Nuestra misión es ayudar a crecer el ecosistema local de indumentaria en Argentina y toda Latinoamérica",
+            "checks": [
+                "Conectamos con los productores locales.",
+                "Porque tiene más sentido comprar algo hecho por una persona cercana que por una empresa lejana.",
+                "Porque los productos locales hacen de nuetro rincón del mundo un lugar mejor para vivir.",
+                "Porque fomentamos el empleo local.",
+                "Porque tiene más sentido para el medio ambiente."
+            ],
+            "textoBoton": "Descubrí nuestros productos",
+            "imagen": "https://images.pexels.com/photos/6211446/pexels-photo-6211446.jpeg"
+        },
+        {
+            "id": 4,
+            "componente": "partner",
+            "titulo": "Nuestro socio benéfico",
+            "img": "https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg",
+            "texto": "Donamos el 5% de nuestras ganancias a nuestro socio benéfico"
+        },
+        {
+            "id": 5,
+            "componente": "bloque2",
+            "direccion": "izquierda",
+            "titulo": "Sorprende a alguien Trabajando desde casa",
+            "texto": "¿Tienes un colega o familiar que trabaja duro en casa? Nuestra caja   de prendas \"Trabajar desde casa\" es la forma perfecta de hacerlos sonreír, con entrega directa en su domicilio. Si quieres comprar para un grupo grande de personas, ponte en contacto con nosotros y hablaremos de paquetes a medida y mensajes personalizados.",
+            "checks": null,
+            "textoBoton": "Comprar Ahora",
+            "imagen": "https://images.pexels.com/photos/6124349/pexels-photo-6124349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            "id": 6,
+            "componente": "carrusel",
+            "imagenes": [
+                
+            ]
+        }
+    ],
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Vestido Josh",
+            "descripcion": "Vestido largo color marfil cómodo con lazada en contraste de lino de Topshop",
+            "precio": 1000,
+            "img": "https://images.asos-media.com/products/vestido-largo-color-marfil-comodo-con-lazada-en-contraste-de-lino-de-topshop/204464065-1-ivory?$n_640w$&wid=513"
+        },
+        {
+            "id": 2,
+            "nombre": "Jean Joshua",
+            "descripcion": "Vaqueros negros lavados Editor de Topshop",
+            "precio": 850,
+            "img": "https://images.asos-media.com/products/vaqueros-negros-lavados-editor-de-topshop/201200900-1-washedblack?$n_640w$&wid=513"
+        },
+        {
+            "id": 3,
+            "nombre": "Pantalón Reuter",
+            "descripcion": "Pantalones rosas utilitarios de pernera recta de pana de Topshop",
+            "precio": 1500,
+            "img": "https://images.asos-media.com/products/pantalones-rosas-utilitarios-de-pernera-recta-de-pana-de-topshop/203007615-1-pink?$n_640w$&wid=513"
+        },
+        {
+            "id": 4,
+            "nombre": "Vestodo Lilian",
+            "descripcion": "Vestido midi rojo y rosa con paneles en contraste de manga larga de Topshop",
+            "precio": 2500,
+            "img": "https://images.asos-media.com/products/vestido-midi-rojo-y-rosa-con-paneles-en-contraste-de-manga-larga-de-topshop/204080889-3?$n_640w$&wid=513"
+        },
+        {
+            "id": 5,
+            "nombre": "Camperita Rebeca",
+            "descripcion": "Rebeca color marfil con lazada delantera de croché calado de Topshop",
+            "precio": 30000,
+            "img": "https://images.asos-media.com/products/rebeca-color-marfil-con-lazada-delantera-de-croche-calado-de-topshop/204572597-1-ivory?$n_640w$&wid=513&fit=constrain"
+        },
+        {
+            "id": 6,
+            "nombre": "Tobillera Rius",
+            "descripcion": "Tobillera dorada fina con cristales colgantes de Topshop",
+            "precio": 1000,
+            "img": "https://images.asos-media.com/products/tobillera-dorada-fina-con-cristales-colgantes-de-topshop/204032736-1-gold?$n_640w$&wid=513"
+        },
+        {
+            "id": 7,
+            "nombre": "Vestido Ricochet",
+            "descripcion": "Falda midi azul con estampado floral de malla de Topshop",
+            "precio": 5000,
+            "img": "https://images.asos-media.com/products/falda-midi-azul-con-estampado-floral-de-malla-de-topshop/204080736-1-blue?$n_640w$&wid=513"
+        },
+        {
+            "id": 8,
+            "nombre": "Maya Darin",
+            "descripcion": "Conjunto de baño negro de canalé Mix & Match de Topshop",
+            "precio": 3000,
+            "img": "https://images.asos-media.com/products/top-de-bikini-negro-triangular-de-canale-mix-match-de-topshop/203629024-1-black?$n_640w$&wid=513"
+        },
+        {
+            "id": 9,
+            "nombre": "Zapatillas Zohe",
+            "descripcion": "Conjunto de baño negro de canalé Mix & Match de Topshop",
+            "precio": 8000,
+            "img": "https://images.asos-media.com/products/zapatillas-de-deporte-blancas-y-negras-stack-mayze-de-puma/203883272-1-whiteblack?$n_640w$&wid=513"
+        },
+        {
+            "id": 10,
+            "nombre": "Pantalón Desert",
+            "descripcion": "Pantalones color arena estilo paracaidista con frunces de ASOS DESIGN",
+            "precio": 10000,
+            "img": "https://images.asos-media.com/products/pantalones-color-arena-estilo-paracaidista-con-frunces-de-asos-design/204233432-1-sand?$n_640w$&wid=513"
+        },
+        {
+            "id": 11,
+            "nombre": "Pantalón Alumin",
+            "descripcion": "Pantalones plateados de estilo paracaidista de tejido metalizado de ASOS DESIGN",
+            "precio": 8000,
+            "img": "https://images.asos-media.com/products/pantalones-plateados-de-estilo-paracaidista-de-tejido-metalizado-de-asos-design/204339443-1-silver?$n_640w$&wid=513"
+        },
+        {
+            "id": 12,
+            "nombre": "Kimono Shunkin",
+            "descripcion": "Kimono playero largo con estampado floral y cuentas de Miss Selfridge",
+            "precio": 4000,
+            "img": "https://images.asos-media.com/products/kimono-playero-largo-con-estampado-floral-y-cuentas-de-miss-selfridge/204189574-4?$n_640w$&wid=513&fit=constrain"
+        }
+    ],
+    "carrito": []
+}
