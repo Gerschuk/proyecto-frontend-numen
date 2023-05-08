@@ -1,8 +1,8 @@
 // Componentes
 import Alerta from "./assets/componentes/alerta/Alerta";
 import Beneficios from "./assets/componentes/beneficios/Beneficios";
-import Navbar from "./assets/componentes/navbar/Navbar";
 import Home from "./assets/componentes/home/Home";
+import Navbar from "./assets/componentes/navbar/Navbar";
 import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
@@ -60,11 +60,10 @@ function App() {
        
         <BloqueLateral data={contenido} bloque="bloque1"/>
 
-        
         <Partner data={contenido} />
         
         <BloqueLateral data={contenido} bloque="bloque2" />
-        <Carrusel />
+        <Carrusel data={contenido} />
         
       </main>
       <Footer /> 
