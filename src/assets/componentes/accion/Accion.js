@@ -27,7 +27,6 @@ const iconos = {
 
 function Accion({ tipo = "link", circulo = false, icono = null, texto = null, url = null, cantProductos = null }) {
     let render = null;
-    console.log(tipo, circulo, icono, texto, url, cantProductos)
     if (tipo === tipoAccion.LINK) {
         switch (circulo) {
             case true: {
