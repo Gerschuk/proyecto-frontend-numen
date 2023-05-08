@@ -1,8 +1,8 @@
 // Componentes
 import Alerta from "./assets/componentes/alerta/Alerta";
+import Beneficios from "./assets/componentes/beneficios/Beneficios";
 import Navbar from "./assets/componentes/navbar/Navbar";
 import Home from "./assets/componentes/home/Home";
-import Beneficios from "./assets/componentes/beneficios/Beneficios";
 import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
@@ -15,24 +15,6 @@ import axios from "axios";
 
 // Endpoints
 import { ConexionesApi } from "./assets/Diccionario";
-
-const paginas = [
-  {
-    id: 0,
-    texto: "Inicio",
-    url: "/inicio"
-  },
-  {
-    id: 1,
-    texto: "Productos",
-    url: "/productos"
-  },
-  {
-    id: 2,
-    texto: "Contacto",
-    url: "/contacto"
-  }
-];
 
 const bloqueLateral1 = {
   titulo: "¿Quiénes Fabrican Tus Prendas?",
@@ -96,8 +78,9 @@ function App() {
       <main className="container">
 
         <Home data={contenido} />
+        
+        <Beneficios data={contenido} />
         {/*
-        <Beneficios />
         <BloqueLateral props={bloqueLateral1} />
 
         <Partner titulo="Nuestro socio benéfico" img="https://caritas.org.ar/wp-content/uploads/2021/05/logo-caritas.svg" texto="Donamos el 5% de nuestras ganancias a nuestro socio benéfico" />
