@@ -32,7 +32,7 @@ function BloqueLateral(contenido) {
     const strColor = arrTitulo?.slice(arrTitulo.length / 2, arrTitulo.length).join(" ");
 
     return (
-        <section className={(conten.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
+        <section className={(conten?.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
             <div className="col-12 col-md-8">
                 <h2 className="mb-4">{strNonColor}<span className="color-primario">{strColor}</span></h2>
                 <p>{conten?.texto}</p>
