@@ -1,3 +1,4 @@
+// Componentes
 import Alerta from "./assets/componentes/alerta/Alerta";
 import Navbar from "./assets/componentes/navbar/Navbar";
 import Home from "./assets/componentes/home/Home";
@@ -5,10 +6,15 @@ import Beneficios from "./assets/componentes/beneficios/Beneficios";
 import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
-import React from 'react';
 import Carrito from "./assets/componentes/carrito/Carrito";
 import Footer from "./assets/componentes/footer/Footer";
+
+// Liberarías
+import React, { useEffect, useState } from 'react';
 import axios from "axios";
+
+// Endpoints
+import { ConexionesApi } from "./assets/Diccionario";
 
 const paginas = [
   {
@@ -52,10 +58,23 @@ const bloqueLateral2 = {
 }
 
 function App() {
+
+  const [contenido, setContenido] = useState([]);
+
+  useEffect(() => {
+    axios.get(ConexionesApi.contenido)
+      .then(res => {
+        setContenido(res.data);
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }, []);
+
   return (
     <>
-      <Alerta texto="Envío Gratis en todas tus compras superiores a 5000$" />
-      <header>
+      <Alerta data={contenido} />
+      {/* <header>
         <Navbar contenido={paginas} />
         <Carrito />
       </header>
@@ -74,7 +93,7 @@ function App() {
         <BloqueLateral props={bloqueLateral2} />
         <Carrusel />
       </main>
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
