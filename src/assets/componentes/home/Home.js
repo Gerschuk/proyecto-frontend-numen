@@ -5,7 +5,6 @@ function Home(contenido) {
 
     const data = contenido?.data?.find(item => item.componente === "home");
 
-    console.log(data)
     return (
 
         <div className="home row">
