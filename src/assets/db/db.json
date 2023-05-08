@@ -3,7 +3,7 @@
         {
             "id": 0,
             "texto": "Inicio",
-            "url": "/inicio"
+            "url": "/"
         },
         {
             "id": 1,

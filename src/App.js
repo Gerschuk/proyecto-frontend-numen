@@ -59,6 +59,7 @@ const bloqueLateral2 = {
 
 function App() {
 
+  // Obtiene el contenido estático de la página
   const [contenido, setContenido] = useState([]);
 
   useEffect(() => {
@@ -66,20 +67,33 @@ function App() {
       .then(res => {
         setContenido(res.data);
       })
-      .catch(error => {
-        console.log(error);
+      .catch(err => {
+        console.log(err);
       })
   }, []);
+
+  // Obtiene las rutas de la página, por ejemplo los links del navbar
+  const [rutas, setRutas] = useState([]);
+
+  useEffect(() => {
+    axios.get(ConexionesApi.rutas)
+      .then(res => {
+        setRutas(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+    })
+  }, [])
 
   return (
     <>
       <Alerta data={contenido} />
-      {/* <header>
-        <Navbar contenido={paginas} />
+      <header>
+        <Navbar contenido={rutas} />
         <Carrito />
       </header>
 
-      <main className="container">
+      {/* <main className="container">
 
         <Home
           titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada"
