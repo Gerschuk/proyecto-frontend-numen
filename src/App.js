@@ -82,7 +82,7 @@ function App() {
       })
       .catch(err => {
         console.log(err);
-    })
+      })
   }, [])
 
   return (
@@ -92,13 +92,11 @@ function App() {
         <Navbar contenido={rutas} />
         <Carrito />
       </header>
+      
+      <main className="container">
 
-      {/* <main className="container">
-
-        <Home
-          titulo="Temporada Invierno" parrafo="Encontrá las mejores prendas seleccionadas por nuestros expertos para la siguiente temporada"
-          textoBoton="Conocer más" />
-
+        <Home data={contenido} />
+        {/*
         <Beneficios />
         <BloqueLateral props={bloqueLateral1} />
 
@@ -106,10 +104,11 @@ function App() {
 
         <BloqueLateral props={bloqueLateral2} />
         <Carrusel />
+        */}
       </main>
-      <Footer /> */}
-    </>
-  );
+      <Footer /> 
+      </>
+      );
 }
 
-export default App;
+      export default App;
