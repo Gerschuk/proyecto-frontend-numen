@@ -7,7 +7,6 @@ import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import Carrito from "./assets/componentes/carrito/Carrito";
-import Footer from "./assets/componentes/footer/Footer";
 
 // Liberarías
 import React, { useEffect, useState } from 'react';
