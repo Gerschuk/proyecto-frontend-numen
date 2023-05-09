@@ -27,7 +27,7 @@ https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-(Community
 - El diseño debe ser *responsive*
 - La información será consumida de un backend mockeado con *[json-server](https://www.npmjs.com/package/json-server)*
 - Para las consultas al backend, se deberá utilizar la librería [*axios*](https://axios-http.com/)
-- Para facilitar los estilos, se pueden utilizar librerías FrontEnd de CSS
+- Para facilitar los estilos, se pueden utilizar librerías FrontEnd de CSS (Se utiliza *[Bootstrap](https://getbootstrap.com/)*
 
 ## Requerimientos funcionales
 - Al presionar el botón de compra, se deberá abrir un *Modal* para confirmar la compra
@@ -67,3 +67,8 @@ Para instalar todas las dependencias del proyecto ejecutar el siguiente comando
 ### Simular la API con JSON-Server
 Para poder visualizar el contenido del sitio es necesario levantar el servicio de json-server con el siguiente comando.
 `json-server --watch "src/assets/db/db.json"`
+
+### Ejecutar el proyecto
+Para ejecutar el proyecto y poder verlo en el navegador, ejecutar el siguiente comando: 
+`npm start`
+En caso de solicitarlo presionar la tecla `y` para que react corra en el puerto 3001 ya que el puerto 3000 lo utiliza json-server

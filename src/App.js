@@ -1,8 +1,9 @@
 // Componentes
 import Alerta from "./assets/componentes/alerta/Alerta";
-import Beneficios from "./assets/componentes/beneficios/Beneficios";
-import Home from "./assets/componentes/home/Home";
 import Navbar from "./assets/componentes/navbar/Navbar";
+import Home from "./assets/componentes/home/Home";
+import Beneficios from "./assets/componentes/beneficios/Beneficios";
+import Cards from "./assets/componentes/tarjetas/Cards";
 import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
@@ -15,6 +16,7 @@ import axios from "axios";
 
 // Endpoints
 import { ConexionesApi } from "./assets/Diccionario";
+
 
 function App() {
 
@@ -55,6 +57,8 @@ function App() {
       <main className="container">
 
         <Home data={contenido} />
+
+        <Cards />
         
         <Beneficios data={contenido} />
        
@@ -66,7 +70,8 @@ function App() {
         <Carrusel data={contenido} />
         
       </main>
-      <Footer /> 
+      
+      <Footer/>
       </>
       );
 }
