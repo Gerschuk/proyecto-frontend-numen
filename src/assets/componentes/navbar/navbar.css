@@ -5,6 +5,7 @@
     height: var(--navbar-height);
 }
 
+
 .navbar-brand {
     width: var(--navbar-brand-width);
 }
@@ -33,8 +34,21 @@
     padding-left: 1rem;
     background-color: var(--color-fondo-body);
     box-shadow: 0 6px 9px -5px var(--color-primario);
+    background-color: var(--color-fondo-body);
+    box-shadow: 0 6px 9px -5px var(--color-primario);
 }
 
+@media only screen and (min-width: 768px) {
+    .navbar .container-fluid>.d-flex {
+        width: 90%;
+        padding-right: 2rem;
+    }
+
+    .navbar-collapse {
+        padding-left: 1rem;
+        box-shadow: inherit;
+    }
+}
 @media only screen and (min-width: 768px) {
     .navbar .container-fluid>.d-flex {
         width: 80%;
