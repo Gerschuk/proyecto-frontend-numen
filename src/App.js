@@ -58,9 +58,9 @@ function App() {
       <main className="container">
 
         <Home data={contenido} />
-        
-        <Cards />
 
+        <Cards />
+        
         <Beneficios data={contenido} />
        
         <BloqueLateral data={contenido} bloque="bloque1"/>
@@ -71,7 +71,8 @@ function App() {
         <Carrusel data={contenido} />
         
       </main>
-      <Footer /> 
+      
+      <Footer/>
       </>
       );
 }
