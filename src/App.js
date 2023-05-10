@@ -33,6 +33,7 @@ function App() {
       })
   }, []);
 
+  console.log(contenido)
   // Obtiene las rutas de la página, por ejemplo los links del navbar
   const [rutas, setRutas] = useState([]);
 
