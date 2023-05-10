@@ -3,7 +3,7 @@ import "./carrusel.css";
 function Carrusel(contenido) {
 
     const cont = contenido?.data?.find(item => item.componente === "carrusel")?.imagenes;
-   console.log(cont)
+
     return (
         <section className="row py-4 justify-content-center">
             <h2 className="text-center pt-4"><span className="color-primario">@FashionPremium </span>en Instagram</h2>
