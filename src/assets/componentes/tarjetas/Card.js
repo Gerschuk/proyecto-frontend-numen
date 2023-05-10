@@ -10,7 +10,7 @@ function Card({title,imgSource,precioO,precioD}) {
 
       <h4 className='card-title'>{title}</h4>
       <p className='card-text text-secondary'></p>
-      <div class="precio">
+      <div className="precio">
         <span className="precio-descuento">{precioD}</span> 
    <span className="precio-original">{precioO}</span> 
     </div>
@@ -25,6 +25,3 @@ Compra Rapida
 
 
 export default Card;
-
-
-
