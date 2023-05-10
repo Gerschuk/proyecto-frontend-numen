@@ -10,7 +10,7 @@ function Footer() {
                     <img className="footer--logo" src={logo} alt="Fashion Premium Logo" />
                 </a>
             </div>
-            <p class="text-center col-md-4  mb-md-0 text-body-primary">© 2023 Fashion Premium</p>
+            <p className="text-center col-md-4  mb-md-0 text-body-primary">© 2023 Fashion Premium</p>
 
 
             <ul className="nav col-md-3 justify-content-end list-unstyled d-flex">
