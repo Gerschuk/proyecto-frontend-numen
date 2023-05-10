@@ -41,8 +41,10 @@ function Cards() {
     <div className='d-flex flex-wrap justify-content-center h-100 aling-item-center '>  
        
      {
+    
       cards.map((card, index) =>(
         <div className=' col-md-3' key={index}>
+
           <Card title={card.title} imgSource={card.image} precioD={card.precioD}precioO={card.precioO}  />
           </div>
       ))
