@@ -5,10 +5,22 @@ import Footer from "../componentes/footer/Footer";
 import { ConexionesApi } from "../Diccionario";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Outlet } from "react-router";
 
-function Template(contenido) {
-    
-    console.log(contenido)
+function Template({children}) {
+
+    // Obtiene el contenido estático de la página
+    const [contenido, setContenido] = useState([]);
+
+    useEffect(() => {
+        axios.get(ConexionesApi.contenido)
+            .then(res => {
+                setContenido(res.data);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }, []);
 
     // Obtiene las rutas de la página, por ejemplo los links del navbar
     const [rutas, setRutas] = useState([]);
@@ -31,7 +43,7 @@ function Template(contenido) {
                 <Carrito />
             </header>
             <main className="container">
-                {contenido?.children}
+                <Outlet />
             </main>
             <Footer />
         </>

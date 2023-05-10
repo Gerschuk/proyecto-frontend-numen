@@ -8,6 +8,8 @@ import axios from "axios";
 
 // Endpoints
 import { ConexionesApi } from "./assets/Diccionario";
+import AppRoutes from "./Routes";
+import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
@@ -26,12 +28,10 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Template data={contenido}>
-        <HomePage data={contenido} />
-      </Template>
-      </>
-      );
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
-      export default App;
+export default App;

@@ -19,8 +19,6 @@ function HomePage(contenido) {
 
     return (
         <>
-            <main className="container">
-
                 <Home data={homeContent} />
 
                 <Beneficios data={beneficiosContent} />
@@ -34,7 +32,6 @@ function HomePage(contenido) {
 
                 <Carrusel data={carruselContent} />
 
-            </main>
         </>
     )
 }
