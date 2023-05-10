@@ -19,12 +19,14 @@ const iconos = {
     "twitter": <i className="bi bi-twitter"></i>,
     "whatsapp": <i className="bi bi-whatsapp"></i>,
     "telegram": <i className="bi bi-telegram"></i>,
+    "-": <i className="bi bi-dash-circle-fill"></i>,
+    "+": <i className="bi bi-plus-circle-fill"></i>,
+    "borrar": <i className="bi bi-trash3-fill"></i>
 }
 
 
-function Accion({ tipo = "link", circulo = false, icono = null, texto = null, url=null, cantProductos =null }) {
+function Accion({ tipo = "link", circulo = false, icono = null, texto = null, url = null, cantProductos = null }) {
     let render = null;
-    console.log(tipo, circulo, icono, texto, url, cantProductos)
     if (tipo === tipoAccion.LINK) {
         switch (circulo) {
             case true: {
@@ -39,20 +41,30 @@ function Accion({ tipo = "link", circulo = false, icono = null, texto = null, ur
     } else if (tipo === tipoAccion.BOTON) {
         switch (circulo) {
             case true: {
-                
+
                 if (icono === "carrito") {
-                    
-                    render = <button type="button" className="btn boton-redondo position-relative">
-                        {iconos[icono]}
-                        <span className="position-absolute top-10 start-85 translate-middle badge rounded-pill bg-secondary">{cantProductos}</span>
-                    </button>
+
+                    render =
+                        <button
+                            type="button"
+                            className="btn boton-redondo position-relative"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas"
+                            aria-controls="offcanvas">
+                            {iconos[icono]}
+                            <span className="position-absolute top-10 start-85 translate-middle badge rounded-pill bg-secondary">{cantProductos}</span>
+                        </button>
                 } else {
                     render = <button type="button" className="btn boton-redondo me-1">{iconos[icono]}</button>;
                 }
                 break;
             }
             default: {
-                render = <button type="button" className="btn btn-primary btn-sm">{texto}</button>;
+                if (!texto) {
+                    render = <button type="button" className="solo-icono">{iconos[icono]}</button>;
+                } else {
+                    render = <button type="button" className="btn btn-primary btn-sm">{texto}</button>;
+                }
             }
         }
     }

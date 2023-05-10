@@ -5,7 +5,7 @@ function Card({title,imgSource,precioO,precioD}) {
   
   return (
     <div className="card d-flex  col-md-10">
-      <img src={imgSource} alt=''/>
+      <img src={imgSource}  alt=''/>
       <div className='card-body d-flex align-items-center flex-column'></div>
 
       <h4 className='card-title'>{title}</h4>
