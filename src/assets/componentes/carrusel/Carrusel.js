@@ -2,7 +2,7 @@ import "./carrusel.css";
 
 function Carrusel(contenido) {
 
-    const cont = contenido?.data?.find(item => item.componente === "carrusel")?.imagenes;
+    const imagenes = contenido?.data?.imagenes;
 
     return (
         <section className="row py-4 justify-content-center">
@@ -11,7 +11,7 @@ function Carrusel(contenido) {
             <div id="carousel" className="carousel slide pt-3 ">
                 <div className="carousel-inner">
                     {
-                        cont?.map((elemento, index) => {
+                        imagenes?.map((elemento, index) => {
                             return (
                                 <div key={index} className={(index === 0) ? "carousel-item active" : "carousel-item"}>
                                     <img src={elemento} className="d-block img-fluid" alt="..." />

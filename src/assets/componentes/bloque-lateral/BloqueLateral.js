@@ -22,34 +22,32 @@ import Accion from "../accion/Accion"
 */
 
 function BloqueLateral(contenido) {
-
-    const conten = contenido?.data?.find(item => item.componente === contenido.bloque);
     
-    const arrTitulo = conten?.titulo.split(" ");
+    const arrTitulo = contenido?.data?.titulo.split(" ");
     const strNonColor = arrTitulo?.slice(0, arrTitulo.length / 2).join(" ") + " ";
     /* Obtiene del titulo las palabras a mostrar de color */
     const strColor = arrTitulo?.slice(arrTitulo.length / 2, arrTitulo.length).join(" ");
 
     return (
 
-        <section className={(conten?.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
+        <section className={(contenido?.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
             <div className="col-12 col-md-8">
                 <h2 className="mb-4">{strNonColor}<span className="color-primario">{strColor}</span></h2>
-                <p>{conten?.texto}</p>
+                <p>{contenido?.data?.texto}</p>
                 {
-                    (conten?.checks !== null) ?
+                    (contenido?.data?.checks !== null) ?
                         <>
-                            {conten?.checks.map((elem, index) => {
+                            {contenido?.data?.checks.map((elem, index) => {
                                 return <CheckInformacion key={index} texto={elem} />
                             })}
                         </> : ""
                 }
                 <div className="text-center">
-                    <Accion tipo="boton" texto={conten?.textoBoton} />
+                    <Accion tipo="boton" texto={contenido?.data?.textoBoton} />
                 </div>
             </div>
             <div className="col-md-4 pt-4">
-                <img className="img-fluid " src={conten?.imagen} alt="Nuestra misión"></img>
+                <img className="img-fluid " src={contenido?.data?.imagen} alt="Nuestra misión"></img>
             </div>
         </section>
     )

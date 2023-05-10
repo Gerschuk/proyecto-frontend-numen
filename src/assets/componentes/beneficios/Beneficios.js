@@ -11,7 +11,8 @@ const iconos = {
 }
 function Beneficios(contenido) {
 
-    const beneficios = contenido?.data?.find(item => item.componente === "beneficios")?.beneficios;
+    console.log(contenido)
+    const beneficios = contenido?.data?.beneficios;
 
     return (
         <section className="py-5 mt-4 text-center">

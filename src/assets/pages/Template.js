@@ -6,9 +6,10 @@ import { ConexionesApi } from "../Diccionario";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-function Template({contenido, children }) {
-
+function Template(contenido) {
+    
     console.log(contenido)
+
     // Obtiene las rutas de la página, por ejemplo los links del navbar
     const [rutas, setRutas] = useState([]);
 
@@ -25,12 +26,12 @@ function Template({contenido, children }) {
     return (
         <>
             <header>
-                <Alerta data={contenido} />
+                <Alerta data={contenido?.data} />
                 <Navbar contenido={rutas} />
                 <Carrito />
             </header>
             <main className="container">
-                {children}
+                {contenido?.children}
             </main>
             <Footer />
         </>

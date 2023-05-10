@@ -2,16 +2,13 @@ import Accion from "../accion/Accion";
 import "./home.css";
 
 function Home(contenido) {
-
-    const data = contenido?.data?.find(item => item.componente === "home");
-
     return (
 
         <div className="home row">
             <div className="contenido d-flex flex-column justify-content-end align-items-center text-center">
-                <h1 className="titulo">{data?.titulo}</h1>
-                <p>{data?.texto}</p>
-                <Accion tipo="boton" texto={data?.textoBoton} />
+                <h1 className="titulo">{contenido?.data?.titulo}</h1>
+                <p>{contenido?.data?.texto}</p>
+                <Accion tipo="boton" texto={contenido?.data?.textoBoton} />
             </div>
         </div>
     )
