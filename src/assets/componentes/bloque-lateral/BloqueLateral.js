@@ -1,6 +1,6 @@
 import "./bloque-lateral.css";
 import CheckInformacion from "../check-informacion/CheckInformacion";
-import Boton from "../boton/Boton";
+import Accion from "../accion/Accion"
 
 /* El componente bloque lateral,  muestra texto al lado de una imagen:
 
@@ -21,31 +21,35 @@ import Boton from "../boton/Boton";
   
 */
 
-function BloqueLateral({ props }) {
-    const arrTitulo = props.titulo.split(" ");
-    const strNonColor = arrTitulo.slice(0, arrTitulo.length / 2).join(" ") + " ";
+function BloqueLateral(contenido) {
+
+    const conten = contenido?.data?.find(item => item.componente === contenido.bloque);
+    
+    const arrTitulo = conten?.titulo.split(" ");
+    const strNonColor = arrTitulo?.slice(0, arrTitulo.length / 2).join(" ") + " ";
     /* Obtiene del titulo las palabras a mostrar de color */
-    const strColor = arrTitulo.slice(arrTitulo.length / 2, arrTitulo.length).join(" ");
+    const strColor = arrTitulo?.slice(arrTitulo.length / 2, arrTitulo.length).join(" ");
 
     return (
-        <section className={(props.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
+
+        <section className={(conten?.direccion === "izquierda") ? "bloque-lateral row flex-row-reverse align-items-center py-5" : "bloque-lateral row align-items-center py-5"}>
             <div className="col-12 col-md-8">
                 <h2 className="mb-4">{strNonColor}<span className="color-primario">{strColor}</span></h2>
-                <p>{props.texto}</p>
+                <p>{conten?.texto}</p>
                 {
-                    (props.checks !== null) ?
+                    (conten?.checks !== null) ?
                         <>
-                            {props.checks.map((elem) => {
-                                return <CheckInformacion texto={elem} />
+                            {conten?.checks.map((elem, index) => {
+                                return <CheckInformacion key={index} texto={elem} />
                             })}
                         </> : ""
                 }
                 <div className="text-center">
-                    <Boton texto={props.textoBoton} />
+                    <Accion tipo="boton" texto={conten?.textoBoton} />
                 </div>
             </div>
             <div className="col-md-4 pt-4">
-                <img className="img-fluid " src={props.imagen} alt="Nuestra misión"></img>
+                <img className="img-fluid " src={conten?.imagen} alt="Nuestra misión"></img>
             </div>
         </section>
     )
