@@ -17,28 +17,29 @@ function ListaProductos({ id, nombre, precio, cant }) {
                     <div className="carrito--precio">$180</div>
                 </div>
                 <div className="row w-20 pt-2 justify-content-center">
-                    <span className="badge bg-secondary rounded-pill">14</span>
-                    <div className="d-flex justify-content-between mt-3">
-                        <Accion tipo="boton" icono="+" />
+                    <Accion tipo="boton" icono="borrar" />
+                    <div className="d-flex justify-content-between align-items-center  mt-3">
                         <Accion tipo="boton" icono="-" />
-                        <Accion tipo="boton" icono="borrar" />
+                        <span className="badge bg-secondary rounded-pill">14</span>
+                        <Accion tipo="boton" icono="+" />
                     </div>
                 </div>
-                
-                
+
+
             </li>
-            <li key="2"className="list-group-item d-flex justify-content-between align-items-start">
+            <li key="2" className="list-group-item d-flex justify-content-between align-items-start">
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.lIqemwGonn0CMwCT2zk4hAHaIw%26pid%3DApi&f=1&ipt=e85df6fa3d084111eccafc2703f69cbae1615e01e33e56a05766109cd82d7835&ipo=images" alt="remera" className="carrito--thumbnail" />
                 <div className="ms-2 me-auto">
                     <div className="fw-bold">Remera John</div>
                     <div className="carrito--precio">$180</div>
                 </div>
                 <div className="row w-20 pt-2 justify-content-center">
-                    <span className="badge bg-secondary rounded-pill">14</span>
+                    <Accion tipo="boton" icono="borrar" />
+
                     <div className="d-flex justify-content-between mt-3">
-                        <Accion tipo="boton" icono="+" />
                         <Accion tipo="boton" icono="-" />
-                        <Accion tipo="boton" icono="borrar" />
+                        <span className="badge bg-secondary rounded-pill">14</span>
+                        <Accion tipo="boton" icono="+" />
                     </div>
                 </div>
             </li>
