@@ -17,7 +17,7 @@ function Card({ data }) {
         <span className="precio-descuento">{calculaDescuento(data.precio, data.descuento)}</span>
         {(data.descuento !== null) && <span className="precio-original">{data.precio}</span>}
       </div>
-      <button type="button" class="btn btn-primary" data-bs-toggle={`ModalProducto${data.id}`} data-bs-target="#exampleModal">
+      <button type="button" className="btn btn-primary" data-bs-toggle={`ModalProducto${data.id}`} data-bs-target="#exampleModal">
         Comprar ahora
       </button>
     </div>
