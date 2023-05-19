@@ -7,8 +7,8 @@ function calculaDescuento(precio, descuento) {
 function Card({ data }) {
 
   return (
-    <div className="card d-flex  col-md-10">
-      <img src={data.img} alt={data.nombre} />
+    <div className="card d-flex  col-md-10 mb-3">
+      <img className="img-fluid" src={data.img} alt={data.nombre} />
       <div className='card-body d-flex align-items-center flex-column'></div>
 
       <h4 className='card-title'>{data.nombre}</h4>
