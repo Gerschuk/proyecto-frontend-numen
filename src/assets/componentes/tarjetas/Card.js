@@ -1,22 +1,25 @@
 import React from 'react';
 import './Card.css';
 
-function Card({title,imgSource,precioO,precioD}) {
-  
+function calculaDescuento(precio, descuento) {
+  return (descuento) ? Math.round((precio / (1 + descuento))) : precio;
+}
+function Card({ data }) {
+
   return (
     <div className="card d-flex  col-md-10">
-      <img src={imgSource}  alt=''/>
+      <img src={data.img} alt={data.nombre} />
       <div className='card-body d-flex align-items-center flex-column'></div>
 
-      <h4 className='card-title'>{title}</h4>
+      <h4 className='card-title'>{data.nombre}</h4>
       <p className='card-text text-secondary'></p>
       <div className="precio">
-        <span className="precio-descuento">{precioD}</span> 
-   <span className="precio-original">{precioO}</span> 
-    </div>
-    <a href='#!' className='btn  btn-outline-secondary rounded-0 '>
-Compra Rapida
-    </a>
+        <span className="precio-descuento">{calculaDescuento(data.precio, data.descuento)}</span>
+        {(data.descuento !== null) && <span className="precio-original">{data.precio}</span>}
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle={`ModalProducto${data.id}`} data-bs-target="#exampleModal">
+        Comprar ahora
+      </button>
     </div>
   )
 }

@@ -9,14 +9,17 @@ import BloqueLateral from "./assets/componentes/bloque-lateral/BloqueLateral";
 import Partner from "./assets/componentes/partner/Partner";
 import Carrusel from "./assets/componentes/carrusel/Carrusel";
 import Footer from "./assets/componentes/footer/Footer";
+import Modal from "./assets/componentes/modal/Modal";
+import Card from "./assets/componentes/tarjetas/Card";
 
 // Liberarías
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from "axios";
 
 // Endpoints
 import { ConexionesApi } from "./assets/Diccionario";
 
+const DataContext = createContext();
 
 function App() {
 
@@ -33,7 +36,6 @@ function App() {
       })
   }, []);
 
-  console.log(contenido)
   // Obtiene las rutas de la página, por ejemplo los links del navbar
   const [rutas, setRutas] = useState([]);
 
@@ -47,6 +49,18 @@ function App() {
       })
   }, [])
 
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    axios.get(ConexionesApi.productos)
+      .then(res => {
+        setProductos(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+    })
+  },[])
+
   return (
     <>
       <Alerta data={contenido} />
@@ -59,7 +73,7 @@ function App() {
 
         <Home data={contenido} />
 
-        <Cards />
+        <Cards data={productos} />
         
         <Beneficios data={contenido} />
        
@@ -71,7 +85,6 @@ function App() {
         <Carrusel data={contenido} />
         
       </main>
-      
       <Footer/>
       </>
       );
